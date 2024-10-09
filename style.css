@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.img-nav {
+  width: 50%;
+  height: 50%;
+}
+
+
+.navbar .navbar-nav ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.navbar .navbar-nav a {
+    color: #ffff;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+    color: rgb(154, 152, 152);
+}
+
+/* Navbar logo */
+.navbar .logo {
+    height: 50px;
+    width: auto;
+    margin-left: 6rem;
+     /* Space between logo and other elements */
+}
+
+/* Right side container (search + button) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Space between search and button */
+}
+
+/* Search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-container input {
+    width: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    visibility: hidden; /* Sembunyikan input box */
+}
+
+.search-container i {
+    cursor: pointer; /* Pointer saat hover di icon */
+    color: white;
+    font-size: 16px;
+    pointer-events: auto; /* Pastikan ikon bisa di klik */
+}
+
+/* Button Daftar Sekarang */
+.button-daftar {
+    padding: 10px 15px;
+    border: 2px solid white; /* Border dengan ketebalan dan warna */
+    background-color: transparent; /* Bagian tengah transparan */
+    color: white; /* Warna teks sesuai border */
+    /* font-weight: bold; */
+    text-transform: capitalize; /* Huruf kapital untuk teks */
+    border-radius: 20px; /* Membuat sudut tombol melengkung */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Efek transisi */
+}
+
+.button-daftar:hover {
+    background-color: white; /* Warna latar berubah saat hover */
+    color: rgb(86, 86, 86); /* Warna teks berubah menjadi putih saat hover */
+}
+
+/* HERO */
+.hero-container {
+    background-image: linear-gradient(rgba(94, 32, 146, 0.1), 
+                    rgba(38, 9, 67, 0.3)), url("FrameSi.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* 
+    background-attachment: fixed; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    font-size: 20px;
+  }
+
+  .hefa-text {
+    text-align: center;
+    color: white;
+    padding: none;
+    font-size: 50px;
+  }
+  
+  .hero-text h1 {
+    margin-top: 5.5em;
+    font-size: 1.8em;
+    color: var(--dark-color);
+  }
+  
+  .hero-text p {
+    font-size: 0.7em;
+    margin: 2em;
+    font-weight: 700;
+    color: var(--dark-color);
+  }
+  /* END OF HERO */
+
+
+  /* START CONTENT */
+
+  .p-open{
+    display: flex;
+    position: absolute;
+    margin: 34.5em 31.5em 35em 8.5em;
+    color: #29465b;
+  }
+
+  .IMG1{
+    position: absolute;
+    height: 29em;
+    width: auto;
+    margin: 3.5em 8.5em;
+  }
+
+  .container1 {
+    background-color: #ebebeb;
+    font-size: 18px;
+    width: 16em;
+    height: 9em;
+    border-radius: 10px;
+    margin: 3em 57em;
+    margin-bottom: -1.2em;
+    /* color: black; */
+    /* text-decoration: none; */
+    /* flex-direction: column; */
+    /* display:flex; */
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    
+    /* box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); */
+  }
+
+  .container2 {
+    background-color: #ebebeb;
+    font-size: 18px;
+    width: 16em;
+    height: 16em;
+    border-radius: 10px;
+    margin: 3.5em 57em;
+    margin-bottom: -1.2em;
+  }
+
+  .container3 {
+    background-color: #ebebeb;
+    font-size: 18px;
+    width: 16em;
+    height: 26em;
+    border-radius: 10px;
+    margin: 3.5em 57em;
+    margin-bottom: -1.2em;
+  }
+
+  .container4 {
+    background-color: #ebebeb;
+    font-size: 18px;
+    width: 16em;
+    height: 28em;
+    border-radius: 10px;
+    margin: 3.5em 57em;
+    margin-bottom: -1.2em;
+  }
+
+  .container5 {
+    background-color: #ebebeb;
+    font-size: 18px;
+    width: 16em;
+    height: 26em;
+    border-radius: 10px;
+    margin: 3.5em 57em;
+    margin-bottom: -1.2em;
+  }
+
+  .container1 .h-1 {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+    padding: 1.8em 1em 0em 1.8em;
+    font-size: 22px;
+    color: #29465b; /* Warna teks untuk h1 */
+}
+
+  .container2 .h-2 {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+    padding: 1.8em 1em 0em 1.8em;
+    font-size: 22px;
+    color: #29465b; /* Warna teks untuk h1 */
+}
+
+  .container2 .p-1 {
+      display: inline-block;
+      padding: 1em 2em;
+      gap: 4rem;
+      font-size: 16px;
+      list-style: none; /* Menghilangkan bullet point */
+  }
+
+  .container2 .p-1 li {
+      margin-bottom: 10px; /* Memberi jarak antar item */
+  }
+
+  .container2 .p-1 li a {
+      color: #29465b; /* Warna untuk link */
+      text-decoration: none; /* Menghilangkan garis bawah pada link */
+  }
+
+  .container2 .p-1 li a:hover {
+      color: #442043; /* Warna link saat hover (saat di-klik atau di-arahkan) */
+      /* text-decoration: underline; Menambah underline saat hover */
+  }
+
+
+  .container3 .h-3 {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+    padding: 1.8em 1em 0em 1.8em;
+    font-size: 22px;
+    color: #29465b; /* Warna teks untuk h1 */
+}
+
+  .container3 .p-2 {
+      display: inline-block;
+      padding: 1em 2em;
+      gap: 4rem;
+      font-size: 16px;
+      list-style: none; /* Menghilangkan bullet point */
+  }
+
+  .container3 .p-2 li {
+      margin-bottom: 10px; /* Memberi jarak antar item */
+  }
+
+  .container3 .p-2 li a {
+      color: #29465b; /* Warna untuk link */
+      text-decoration: none; /* Menghilangkan garis bawah pada link */
+  }
+
+  .container3 .p-2 li a:hover {
+      color: #442043; /* Warna link saat hover (saat di-klik atau di-arahkan) */
+      /* text-decoration: underline; Menambah underline saat hover */
+  }
+
+
+  .container4 .h-4 {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+    padding: 1.8em 1em 0em 1.8em;
+    font-size: 22px;
+    color: #29465b; /* Warna teks untuk h1 */
+}
+
+  .container4 .p-3 {
+      display: inline-block;
+      padding: 1em 2em;
+      gap: 4rem;
+      font-size: 16px;
+      list-style: none; /* Menghilangkan bullet point */
+  }
+
+  .container4 .p-3 li {
+      margin-bottom: 10px; /* Memberi jarak antar item */
+  }
+
+  .container4 .p-3 li a {
+      color: #29465b; /* Warna untuk link */
+      text-decoration: none; /* Menghilangkan garis bawah pada link */
+  }
+
+  .container4 .p-3 li a:hover {
+      color: #442043; /* Warna link saat hover (saat di-klik atau di-arahkan) */
+      /* text-decoration: underline; Menambah underline saat hover */
+  }
+
+  .container5 .h-5 {
+    display: flex;
+    justify-content: left;
+    text-transform: capitalize;
+    padding: 1.8em 1em 0em 1.8em;
+    font-size: 22px;
+    color: #29465b; /* Warna teks untuk h1 */
+}
+
+.container5 .p-4 {
+  display: inline-block;
+  padding: 1em 2em;
+  gap: 4rem;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #29465b; /* Warna untuk link */
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* END OF CONTENT */
+
+  .footer {
+    background-color: #192231;
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    color: white;
+    padding: 5%;
+    margin: 50px;
+    font-size: 30px;
+  }
+
+  .imo-nav {
+    width: 200px;
+    height: 50%;
+  }
